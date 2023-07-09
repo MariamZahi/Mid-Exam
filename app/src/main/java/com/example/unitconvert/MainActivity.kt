@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+//View layout
+enterEditText = findViewById(R.id.inputEditText)
+convertFromSpinner = findViewById(R.id.conversionFromSpinner)
+convertToSpinner = findViewById(R.id.conversionToSpinner)
+convertButton = findViewById(R.id.convertButton)
+resultTextView = findViewById(R.id.outputTextView)
 
 
-        
+
