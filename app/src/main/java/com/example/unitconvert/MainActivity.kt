@@ -25,5 +25,14 @@ convertToSpinner = findViewById(R.id.conversionToSpinner)
 convertButton = findViewById(R.id.convertButton)
 resultTextView = findViewById(R.id.outputTextView)
 
+    val conversionFromOptions = arrayOf("Centimeters", "Inches", "Miles", "Kilometers", "Meters")
+    val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, conversionFromOptions)
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+    conversionFromSpinner.adapter = adapter
+    val conversionToOptions = arrayOf("Millimeters", "Centimeters", "Kilometers" ,"Miles", "Inches")
+    var adapterForTo = ArrayAdapter(this, android.R.layout.simple_spinner_item, conversionToOptions)
+    adapterForTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+    conversionToSpinner.adapter = adapterForTo
+
 
 
