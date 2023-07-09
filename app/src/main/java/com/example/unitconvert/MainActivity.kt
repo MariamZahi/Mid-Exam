@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     private fun convertOuncesTo(unit: String, value: Double): Double {
         return when (unit) {
             "Ounces" -> value
-            "Grams" -> value * 28.35
+            "Grams" -> value * 28.3
 
             else -> 0.0
         }
