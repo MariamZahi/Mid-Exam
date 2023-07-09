@@ -34,5 +34,31 @@ resultTextView = findViewById(R.id.outputTextView)
     adapterForTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
     conversionToSpinner.adapter = adapterForTo
 
+    convertButton.setOnClickListener { convertValue() }
+}
+
+private fun convertValue() {
+    val inputValue = inputEditText.text.toString().toDoubleOrNull()
+
+    if (inputValue != null) {
+        val currentUnit = conversionFromSpinner.selectedItem.toString()
+        val targetUnit = conversionToSpinner.selectedItem.toString()
+        val result = when (currentUnit) {
+            "Centimeters" -> convertCentimetersTo(targetUnit, inputValue)
+            "Inches" -> convertInchesTo(targetUnit, inputValue)
+            "Kilometers" -> convertKilometersTo(targetUnit, inputValue)
+            "Miles" -> convertMilesTo(targetUnit, inputValue)
+            "Meters" -> convertMetersTo(targetUnit, inputValue)
+
+            else -> 0.0
+        }
+        var convertDoubleinputValue = inputValue.toInt();
+        outputTextView.text = "$convertDoubleinputValue $currentUnit = $result $targetUnit"
+    } else {
+        outputTextView.text = "Please enter the convert value !"
+    }
+}
+
+
 
 
