@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Unit Convert</string>
+    <string name="conversion">Conversion</string>
 </resources>

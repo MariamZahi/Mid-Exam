@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="17dp"
-        android:text="Conversion"
+        android:text="@string/conversion"
         android:textSize="22sp"
         android:textStyle="italic" />
 
@@ -39,6 +39,51 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fromTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/conversionFromSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/conversionToSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="14dp"
+        android:text="Convert"
+        android:background="#FF00FF"
+        android:textColor="#000000"
+        android:textSize="15sp" />
 
 
     <TextView
