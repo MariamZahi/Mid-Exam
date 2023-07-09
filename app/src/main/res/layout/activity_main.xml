@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFF00"
+    android:background="#FFFF99"
     android:orientation="vertical"
     android:paddingStart="22dp"
     android:paddingTop="20dp"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Please Enter"
+        android:hint="@string/please_enter_your_unit"
         android:inputType="numberDecimal" />
 
     <LinearLayout
@@ -44,7 +44,7 @@
                 android:id="@+id/fromTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="From"
+                android:text="@string/from"
                 android:textStyle="bold" />
             <Spinner
                 android:id="@+id/conversionFromSpinner"
@@ -63,7 +63,7 @@
                 android:id="@+id/toTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="To"
+                android:text="@string/to"
                 android:textStyle="bold" />
             <Spinner
                 android:id="@+id/conversionToSpinner"
@@ -80,8 +80,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="22dp"
         android:layout_marginBottom="14dp"
-        android:text="Convert"
-        android:background="#FF00FF"
+        android:text="@string/convert"
+        android:background="#E6E6FA"
         android:textColor="#000000"
         android:textSize="15sp" />
 
