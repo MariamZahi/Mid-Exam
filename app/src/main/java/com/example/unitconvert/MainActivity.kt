@@ -77,7 +77,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-      
     private fun convertCentimetersTo(unit: String, value: Double): Double {
         return when (unit) {
             "Centimeters" -> value
@@ -97,6 +96,9 @@ class MainActivity : AppCompatActivity() {
             "Millimeters" -> value * 25.4
             else -> 0.0
         }
+    }
+    private fun convertKgToPounds(kg: Double): Double {
+        return kg / 0.5
     }
     private fun convertMilesTo(unit: String, value: Double): Double {
         return when (unit) {
